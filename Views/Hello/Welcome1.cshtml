@@ -1,0 +1,19 @@
+﻿
+<h1>Mong bạn không chết</h1>
+<p>sông để thở ,thở để sống </p>
+<p>@ViewBag.ID,@ViewData["Name"]</p>
+<ul>
+
+    @{
+        for (int i = 0; i < (int)ViewBag.Id; i++)
+        {
+            <li> @ViewData["Name"] </li>
+        }
+    }
+</ul>
+<h2>Trang Welcome</h2>
+
+<p> phần Component.</p>
+
+@await Component.InvokeAsync("Hello");
+
